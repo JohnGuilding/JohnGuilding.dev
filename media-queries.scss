@@ -1,0 +1,490 @@
+/* MEDIA QUERIES */
+
+
+//** >1930PX **//
+@media screen and (min-width: 1930px) {
+    .middle-ground {
+        width: 100%;
+    }
+    
+    .foreground {
+        width: 100%;
+    }
+    
+    .background {
+        width: 100%;
+    }
+}
+
+//** MEDIA 1930PX **//
+@media screen and (max-width: 1930px){
+    .middle-ground {
+        width: 2000px;
+    }
+    
+    .foreground {
+        width: 2000px;
+    }
+    
+    .background {
+        width: 2000px;
+    }
+
+@media screen and (max-width: 1600px){
+
+    .projects-section {
+        height: 1500px;
+        width: 80%;
+    }
+
+    .projects-container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+//** MEDIA 1400PX **//
+@media screen and (max-width: 1400px){
+    .middle-ground {
+        width: 1400px;
+    }
+    
+    .foreground {
+        width: 1400px;
+    }
+    
+    .background {
+        width: 1400px;
+    }
+
+    .about-section {
+    
+        .my-border {
+            height: 550px;
+            width: 550px;
+        
+            .border-effect {
+                height: 105%;
+            }
+            .border-effect2 {
+                width: 105%;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+        
+            p {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .skills-container{
+        height: 700px;
+        width: 900px;
+
+        .skills {
+    
+            .circle-description {
+                width: 350px;
+                height: 80px;
+
+                h4 {
+                    font-size: 14px;
+                }
+            }
+
+            .circleLg {
+                height: 80px;
+                width: 80px;
+    
+                &::after {
+                    height: 78px;
+                    width: 78px;
+                    border: 15px solid;
+                }
+            }
+        }
+    }
+
+    .projects-section {
+        width: 100%;
+    }
+
+    .contact-container {
+        height: 300px;
+        width: 920px;
+
+        img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            margin-right: 50px;
+            box-shadow: 10px 10px 30px black;
+        }
+    }
+}
+
+//** MEDIA 992PX **//
+@media screen and (max-width: 992px){
+    .middle-ground {
+        width: 1300px;
+    }
+    
+    .foreground {
+        width: 1300px;
+    }
+    
+    .background {
+        width: 1300px;
+    }
+
+    .navbarHeight {
+        height: 140px;
+    }
+
+    .navbar-links {
+        
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .tech-stack-section {
+
+        .tech {
+            width: 550px;
+            height: 600px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+
+    .skills-container{
+        height: 650px;
+        width: 700px;
+
+        h3 {
+            font-size: 40px;
+        }
+
+        .border-effect4 {
+            height: 70%;
+        }
+
+        .skills {
+    
+            .circle-description {
+                width: 290px;
+                height: 70px;
+
+                h4 {
+                    font-size: 12px;
+                }
+            }
+
+            .circleLg {
+                height: 70px;
+                width: 70px;
+    
+                &::after {
+                    height: 70px;
+                    width: 70px;
+                    border: 10px solid;
+                }
+            }
+        }
+    }
+
+    .projects-section {
+        height: 1200px;
+    }
+
+    .face{
+        height: 200px;
+        width: 300px;
+    }
+    
+    .face1 {
+        height: 200px;
+        transform: translateY(100px);
+    }
+
+    .face2 {
+        height: 200px;
+        transform: translateY(-100px);
+    }
+
+    .card-txt {
+        height: 100px;
+        padding: 15px;
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .card-links {
+        height: 100px;
+
+        a {
+            height: 40px;
+            width: 40px;
+
+            i {
+                font-size: 30px;
+
+                &:hover {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .contact-container {
+        height: 200px;
+        width: 550px;
+
+        img {
+            height: 200px;
+            width: 200px;
+            margin-right: 10px;
+        }
+    }
+
+    .details-container {
+    
+        h3 {
+            font-size: 40px;
+        
+            span {
+                font-size: 30px;
+                font-weight: 300;
+            }
+        }
+
+        .github {
+            font-size: 30px;
+            height: 50px;
+            width: 50px;
+
+            &:hover {
+                font-size: 38px;
+            }
+        }
+
+        .linkedin {
+            font-size: 30px;
+            height: 50px;
+            width: 50px;
+
+            &:hover {
+                font-size: 38px;
+            }
+        }
+    }
+}
+
+//** MEDIA 768PX **//
+@media screen and (max-width: 768px){
+    #big-title {
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    .middle-ground {
+        width: 1300px;
+    }
+    
+    .foreground {
+        width: 1300px;
+    }
+    
+    .background {
+        width: 1300px;
+    }
+
+    .about-section {
+    
+        .my-border {
+            height: 700px;
+            width: 450px;
+
+            .border-effect2 {
+                height: 75%;
+            }
+        
+            h2 {
+                font-size: 30px;
+            }
+        
+            p {
+                font-size: 26px;
+            }
+        }
+    }
+
+    .tech-stack-section {
+
+        .tech {
+            width: 450px;
+            height: 500px;
+        }
+    }
+
+    .skills-container{
+        height: 900px;
+        width: 450px;
+
+        h3 {
+            top: 1%;
+        }
+
+        .border-effect4 {
+            height: 85%;
+            width: 105%;
+        }
+
+        .skills {
+            height: 700px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+        }
+    }
+
+    .projects-section {
+        height: 2300px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .contact-container {
+        height: 400px;
+        width: 300px;
+        flex-direction: column;
+
+        img {
+            height: 250px;
+            width: 250px;
+            margin: auto;
+        }
+    }
+
+    .details-container {
+        height: 200px;
+        justify-items: center;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    
+        h3 {
+            font-size: 40px;
+            grid-column: 1 / 6;
+            grid-row: 1 / 6;
+            text-align: center;
+
+            span {
+                font-size: 15.5px;
+            }
+        }
+
+        
+
+        .github {
+            grid-column: 2;
+            grid-row: 2;       
+        }
+
+        .linkedin {
+            grid-column: 4;
+            grid-row: 2;
+        }
+    }
+} 
+
+//** MEDIA 500PX **//
+@media screen and (max-width: 500px){
+    .about-section {
+    
+        .my-border {
+            height: 800px;
+            width: 300px;
+
+            .border-effect2 {
+                height: 86%;
+                width: 108%;
+            }
+        
+            h2 {
+                font-size: 30px;
+            }
+        
+            p {
+                font-size: 22.5px;
+            }
+        }
+    }
+
+    .tech-stack-section {
+        margin-top: 100px;
+
+        .tech {
+            width: 300px;
+            height: 500px;
+            font-size: 20px;
+
+            .circle>div {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .skills-container{
+        height: 900px;
+        width: 300px;
+
+        h3 {
+            top: 1%;
+            font-size: 30px;
+        }
+
+        .border-effect4 {
+            height: 90%;
+            width: 110%;
+        }
+
+        .skills {
+
+            .circle-description {
+                width: 250px;
+                height: 60px;
+
+                h4 {
+                    font-size: 10px;
+                }
+            }
+
+                .circleLg {
+                    height: 60px;
+                    width: 60px;
+        
+                    &::after {
+                        height: 60px;
+                        width: 56px;
+                        border: 10px solid;
+                    }
+                }
+            }
+        }
+    }
+}
