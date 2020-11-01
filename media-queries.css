@@ -101,6 +101,10 @@
 }
 
 @media screen and (max-width: 1930px) and (max-width: 992px) {
+  .active {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
   .middle-ground {
     width: 1300px;
   }
@@ -111,7 +115,7 @@
     width: 1300px;
   }
   .navbarHeight {
-    height: 140px;
+    height: 160px;
   }
   .navbar-links ul {
     display: -webkit-box;
@@ -338,8 +342,12 @@
 
 @media screen and (max-width: 1930px) and (max-width: 500px) {
   .about-section .my-border {
-    height: 800px;
+    height: 450px;
     width: 300px;
+  }
+  .about-section .my-border .border-effect1 {
+    height: 105%;
+    width: 75%;
   }
   .about-section .my-border .border-effect2 {
     height: 86%;
@@ -349,7 +357,7 @@
     font-size: 30px;
   }
   .about-section .my-border p {
-    font-size: 22.5px;
+    font-size: 15px;
   }
   .tech-stack-section {
     margin-top: 100px;

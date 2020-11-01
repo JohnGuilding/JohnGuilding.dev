@@ -129,6 +129,10 @@
 
 //** MEDIA 992PX **//
 @media screen and (max-width: 992px){
+    .active {
+        transform: translateY(30px);
+    }
+
     .middle-ground {
         width: 1300px;
     }
@@ -142,11 +146,10 @@
     }
 
     .navbarHeight {
-        height: 140px;
+        height: 160px;
     }
 
     .navbar-links {
-        
     
         ul {
             display: flex;
@@ -417,8 +420,13 @@
     .about-section {
     
         .my-border {
-            height: 800px;
+            height: 450px;
             width: 300px;
+
+            .border-effect1 {
+                height: 105%;
+                width: 75%;
+            }
 
             .border-effect2 {
                 height: 86%;
@@ -430,7 +438,7 @@
             }
         
             p {
-                font-size: 22.5px;
+                font-size: 15px;
             }
         }
     }
