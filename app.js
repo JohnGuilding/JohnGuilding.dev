@@ -76,27 +76,40 @@ window.addEventListener('scroll', () => {
     shadow.style.height = `${scroll * 0.5 + 300}px`;
 });
 
-// ABOUT ME ANIMATION //
+
+
+
+
+
+
+
+
+
 
 const aboutMe = document.querySelector('.my-border');
-
-function scrollAppear(){
-    // creates a variable that measure px distance from top of site to top of selected element
-    const scrollPosition = aboutMe.getBoundingClientRect().top;
-    // height of screen in a variable. divide by 1.5 to call function further up the screen
-    const screenPosition = window.innerHeight / 1.8;
-
-    if(scrollPosition < screenPosition) {
-        aboutMe.classList.add('my-border-appear');
-    }
-}
-window.addEventListener('scroll', scrollAppear);
-
-// TECH STACK ANIMATION //
 
 const techIcons = document.querySelectorAll('.circle');
 const techSection = document.querySelector('.tech-stack-section');
 
+const skills = document.querySelector('.skills-container');
+const skillsDescription = document.querySelectorAll('.circle-description');
+const skillsCircle = document.querySelectorAll('.circleLg');
+
+const projects = document.querySelector('.projects-section');
+
+const contact = document.querySelector('.contact-container');
+
+// MAIN ANIMATION FUNCTION //
+const sectionAnimation = (sectionName, animationCalc, className) => {
+    const scrollPosition = sectionName.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / animationCalc
+
+    if (scrollPosition < screenPosition) {
+        sectionName.classList.add(className)
+    }
+}
+
+// TECH STACK ANIMATION //
 function techAppear(){
     const scrollPosition = techSection.getBoundingClientRect().top;
     const screenPosition = window.innerHeight / 3;
@@ -108,61 +121,27 @@ function techAppear(){
         }
     });
 }
-window.addEventListener('scroll', techAppear);
 
-// MY SKILLS ANIMATION //
+// EXTRA FUNCTION FOR SKILLS ANIMATION //
+const skillsDescriptionAppear = () => {
 
-const skills = document.querySelector('.skills-container');
-const skillsDescription = document.querySelectorAll('.circle-description');
-const skillsCircle = document.querySelectorAll('.circleLg');
+    skillsDescription.forEach(skill => {
+        skill.classList.add('skillsD-appear')
+    });
 
-function skillsAppear(){
-    const scrollPosition = skills.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.5;
-
-    if(scrollPosition < screenPosition) {
-        skills.classList.add('skills-appear');
-        skillsDescription.forEach(skill => {
-            skill.classList.add('skillsD-appear')
+    const addCircle = () => {
+        skillsCircle.forEach(circle => {
+            circle.classList.add('circle-appear')
         });
-
-        const addCircle = () => {
-            skillsCircle.forEach(circle => {
-                circle.classList.add('circle-appear')
-            });
-        }
-        setTimeout(addCircle, 200)
     }
-}
-window.addEventListener('scroll', skillsAppear);
-
-//PROJECTS ANIMATION //
-
-const projects = document.querySelector('.projects-section');
-
-function projectsAppear(){
-    const scrollPosition = projects.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1;
-
-    if(scrollPosition < screenPosition) {
-        projects.classList.add('projects-appear');
-        console.log('working');
-    }
+    setTimeout(addCircle, 200)
 }
 
-window.addEventListener('scroll', projectsAppear);
-
-// CONTACT ANIMATION //
-
-const contact = document.querySelector('.contact-container');
-
-function contactAppear(){
-    const scrollPosition = contact.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1;
-
-    if(scrollPosition < screenPosition) {
-        contact.classList.add('contact-appear');
-    }
-}
-
-window.addEventListener('scroll', contactAppear);
+// LISTENING FOR CORRECT SCROLL HEIGHT TO FIRE EACH ANIMATION //
+window.addEventListener('scroll', () => {
+    sectionAnimation(aboutMe, 1.8, 'my-border-appear');
+    techAppear();
+    sectionAnimation(skills, 1.5, 'skills-appear', skillsDescriptionAppear());
+    sectionAnimation(projects, 1, 'projects-appear');
+    sectionAnimation(contact, 1.5, 'contact-appear');
+});  
