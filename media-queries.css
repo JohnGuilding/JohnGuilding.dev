@@ -295,6 +295,7 @@
   .contact-container {
     height: 400px;
     width: 300px;
+    padding-top: 200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

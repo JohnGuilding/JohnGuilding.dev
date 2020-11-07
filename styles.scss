@@ -9,7 +9,7 @@ $blue: rgb(0, 216, 245);
 // $cyan: #0dbfd0;
 $cyan: cyan;
 $lgrey: #EEEEEE;
-$grey: #9EA7B0;
+$grey: #9EA7B0; 
 
 %mountain-parallax {
     position: absolute;
@@ -600,13 +600,13 @@ h2 {
 /* CONTACT SECTION */
 .contact-section {
     height: 900px;
+    max-height: 100vh;
     width: 100%;
     display: flex;
 }
 
 .contact-container {
     height: 450px;
-    max-height: 100vh;
     width: 1100px;
     margin: auto;
     color: $txt;
@@ -620,6 +620,8 @@ h2 {
     img {
         height: 450px;
         width: 450px;
+        object-fit: cover;
+        object-position: 50% 90%;
         border-radius: 50%;
         border: 2px solid $blue;
         margin-right: 100px;

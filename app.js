@@ -76,16 +76,7 @@ window.addEventListener('scroll', () => {
     shadow.style.height = `${scroll * 0.5 + 300}px`;
 });
 
-
-
-
-
-
-
-
-
-
-
+// SECTION ANIMATIONS //
 const aboutMe = document.querySelector('.my-border');
 
 const techIcons = document.querySelectorAll('.circle');
