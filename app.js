@@ -2,7 +2,8 @@
 
 const burgerMenu = document.querySelector('.hamburger-menu');
 const navbarLinks = document.querySelector('.navbar-links');
-const container = document.querySelector('.container');
+const container = document.querySelector('.nav-center');
+// container
 // const navbar = document.querySelector('.nav')
 
 
@@ -25,7 +26,6 @@ const navItems = document.querySelectorAll('li');
 
 window.addEventListener('scroll', function () {
     const scrollHeight = window.pageYOffset;
-    // console.log(window.pageYOffset);
     const navHeight = navbar.getBoundingClientRect().height;
     if (scrollHeight > navHeight) {
         navbar.classList.add('fixed-nav');

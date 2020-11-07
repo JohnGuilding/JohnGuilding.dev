@@ -115,9 +115,13 @@
     width: 1300px;
   }
   .navbarHeight {
-    height: 160px;
+    height: 165px;
   }
-  .navbar-links ul {
+  .nav-header {
+    width: 100%;
+  }
+  .navbar-links {
+    opacity: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,6 +129,17 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .active {
+    opacity: 1;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .nav-toggle {
+    display: inline-block;
   }
   .tech-stack-section .tech {
     width: 550px;

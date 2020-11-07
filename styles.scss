@@ -61,6 +61,7 @@ header {
     margin: 0 auto;
     z-index: 30;
     transition: 1s linear;
+    border: 2px solid red;
 }
 
 .fixed-nav {
@@ -79,13 +80,22 @@ header {
     color: black;
 }
 
-.container {
+// container
+.nav-center {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 68rem;
     width: 78%;
     padding: 10px 0;
     margin: 0 auto;
+    border: 2px solid orange;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid blue;
 }
 
 .logo {
@@ -109,10 +119,10 @@ header {
 }
 
 .navbar-links {
-    opacity: 0;
-    transform: translateY(-100px);
+    display: flex;
+    overflow: hidden;
     transition: 1s linear;
-    // border: 1px solid green;
+    border: 2px solid green;
 
     ul {
         display: flex;
@@ -133,17 +143,16 @@ header {
     }
 }
 
-.active {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-    
-.hamburger-menu {
+.nav-toggle { 
+    display: none;
     cursor: pointer;
     font-size: 25px;
-    color: white;
-}   
+
+    i {
+        color: white;
+    }
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .big-title {

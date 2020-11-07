@@ -45,6 +45,7 @@ header {
   z-index: 30;
   -webkit-transition: 1s linear;
   transition: 1s linear;
+  border: 2px solid red;
 }
 
 .fixed-nav {
@@ -63,17 +64,30 @@ header {
   color: black;
 }
 
-.container {
+.nav-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 68rem;
   width: 78%;
   padding: 10px 0;
   margin: 0 auto;
+  border: 2px solid orange;
+}
+
+.nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid blue;
 }
 
 .logo a {
@@ -94,11 +108,13 @@ header {
 }
 
 .navbar-links {
-  opacity: 0;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
   -webkit-transition: 1s linear;
   transition: 1s linear;
+  border: 2px solid green;
 }
 
 .navbar-links ul {
@@ -121,15 +137,13 @@ header {
   text-decoration: underline;
 }
 
-.active {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-.hamburger-menu {
+.nav-toggle {
+  display: none;
   cursor: pointer;
   font-size: 25px;
+}
+
+.nav-toggle i {
   color: white;
 }
 
