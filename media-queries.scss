@@ -146,7 +146,7 @@
     }
 
     .navbarHeight {
-        height: 165px;
+        height: 200px;
     }
 
     .nav-header {
@@ -155,16 +155,23 @@
 
     .navbar-links {
         opacity: 0;
+        height: 0;
+        width: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
+
+        li {
+            padding: 5px;
+        }
     }
 
     .active {
         opacity: 1;
-        height: fit-content;
+        height: 160px;
         transform: translateY(0px);
     }
-    
+
     .nav-toggle { 
         display: inline-block;
     }
@@ -507,5 +514,9 @@
                 }
             }
         }
+    }
+
+    .contact-container {
+        padding-top: 0;
     }
 }
