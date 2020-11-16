@@ -10,9 +10,8 @@ const container = document.querySelector('.nav-center');
 burgerMenu.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
     navbar.classList.toggle('navbarHeight');
-    container.classList.add('fixed-nav');
+    // container.classList.add('fixed-nav');
     if (navbar.classList.contains('fixed-nav') && window.pageYOffset == 0) {
-        console.log('yay');
         navbar.classList.remove('fixed-nav');
     } else {
         navbar.classList.add('fixed-nav');
@@ -29,8 +28,10 @@ window.addEventListener('scroll', function () {
     const navHeight = navbar.getBoundingClientRect().height;
     if (scrollHeight > navHeight) {
         navbar.classList.add('fixed-nav');
+    } else if (navbarLinks.classList.contains('active')) {
+        navbar.classList.add('fixed-nav'); 
     } else {
-        navbar.classList.remove('fixed-nav');
+        navbar.classList.remove('fixed-nav'); 
     }
 });
 

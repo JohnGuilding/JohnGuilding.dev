@@ -42,20 +42,22 @@ header {
   width: 100%;
   height: 50px;
   margin: 0 auto;
-  z-index: 30;
+  z-index: 99;
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
 
 .fixed-nav {
   background-color: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.fixed-nav h3 a {
+.fixed-nav .nav-center > div > h3 > a {
   color: black;
 }
 
-.fixed-nav ul li a {
+.fixed-nav .scroll-link {
   color: black;
 }
 
