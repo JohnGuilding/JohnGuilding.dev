@@ -270,17 +270,21 @@
     width: 1300px;
   }
   .about-section .my-border {
-    height: 700px;
+    height: 500px;
     width: 450px;
   }
+  .about-section .my-border .border-effect1 {
+    height: 105%;
+  }
   .about-section .my-border .border-effect2 {
-    height: 75%;
+    height: 70%;
   }
   .about-section .my-border h2 {
     font-size: 30px;
+    top: 5%;
   }
   .about-section .my-border p {
-    font-size: 26px;
+    font-size: 23px;
   }
   .tech-stack-section .tech {
     width: 450px;
@@ -312,6 +316,9 @@
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
+  }
+  .contact-section {
+    padding-top: 250px;
   }
   .contact-container {
     height: 400px;
@@ -379,7 +386,7 @@
     font-size: 30px;
   }
   .about-section .my-border p {
-    font-size: 15px;
+    font-size: 17px;
   }
   .tech-stack-section {
     margin-top: 100px;
@@ -387,38 +394,48 @@
   .tech-stack-section .tech {
     width: 300px;
     height: 500px;
-    font-size: 20px;
+  }
+  .tech-stack-section .tech .circle {
+    font-size: 30px;
   }
   .tech-stack-section .tech .circle > div {
     font-size: 15px;
   }
   .skills-container {
-    height: 900px;
+    height: 520px;
     width: 300px;
   }
   .skills-container h3 {
     top: 1%;
     font-size: 30px;
   }
+  .skills-container .border-effect3 {
+    width: 75%;
+  }
   .skills-container .border-effect4 {
-    height: 90%;
+    height: 86%;
     width: 110%;
   }
+  .skills-container .skills {
+    height: 430px;
+    margin-top: 50px;
+  }
   .skills-container .skills .circle-description {
-    width: 250px;
-    height: 60px;
+    width: 230px;
+    height: 35px;
   }
   .skills-container .skills .circle-description h4 {
     font-size: 10px;
   }
   .skills-container .skills .circleLg {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
   }
   .skills-container .skills .circleLg::after {
-    height: 60px;
-    width: 56px;
-    border: 10px solid;
+    height: 38px;
+    width: 38px;
+    border: 7px solid;
   }
 }
 

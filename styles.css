@@ -49,8 +49,6 @@ header {
 
 .fixed-nav {
   background-color: #fff;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .fixed-nav h3 a {
@@ -89,7 +87,7 @@ header {
           justify-content: space-between;
 }
 
-.logo a {
+.nav-header .logo a {
   color: #fff;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -98,11 +96,11 @@ header {
   letter-spacing: 2px;
 }
 
-.logo:hover {
+.nav-header .logo:hover {
   text-decoration: underline;
 }
 
-.logo span {
+.nav-header .logo span {
   font-weight: 300;
 }
 
@@ -113,12 +111,6 @@ header {
   overflow: hidden;
   -webkit-transition: 1s linear;
   transition: 1s linear;
-}
-
-.navbar-links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .navbar-links li {

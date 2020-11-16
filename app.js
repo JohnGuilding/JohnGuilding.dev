@@ -10,7 +10,7 @@ const container = document.querySelector('.nav-center');
 burgerMenu.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
     navbar.classList.toggle('navbarHeight');
-    // container.classList.add('fixed-nav');
+    container.classList.add('fixed-nav');
     if (navbar.classList.contains('fixed-nav') && window.pageYOffset == 0) {
         console.log('yay');
         navbar.classList.remove('fixed-nav');
