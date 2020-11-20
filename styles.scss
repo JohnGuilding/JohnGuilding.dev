@@ -264,7 +264,11 @@ header {
     }
 
     // parallax class
-    .my-border-appear {
+    // .my-border-appear {
+    //     opacity: 1;
+    //     transform: translateY(0px);
+    // }
+    .animation {
         opacity: 1;
         transform: translateY(0px);
     }

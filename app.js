@@ -3,9 +3,6 @@
 const burgerMenu = document.querySelector('.hamburger-menu');
 const navbarLinks = document.querySelector('.navbar-links');
 const container = document.querySelector('.nav-center');
-// container
-// const navbar = document.querySelector('.nav')
-
 
 burgerMenu.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
@@ -85,7 +82,6 @@ const techSection = document.querySelector('.tech-stack-section');
 
 const skills = document.querySelector('.skills-container');
 const skillsDescription = document.querySelectorAll('.circle-description');
-const skillsCircle = document.querySelectorAll('.circleLg');
 
 const projects = document.querySelector('.projects-section');
 
@@ -120,13 +116,6 @@ const skillsDescriptionAppear = () => {
     skillsDescription.forEach(skill => {
         skill.classList.add('skillsD-appear')
     });
-
-    const addCircle = () => {
-        skillsCircle.forEach(circle => {
-            circle.classList.add('circle-appear')
-        });
-    }
-    setTimeout(addCircle, 200)
 }
 
 // LISTENING FOR CORRECT SCROLL HEIGHT TO FIRE EACH ANIMATION //
