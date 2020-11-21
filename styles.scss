@@ -434,6 +434,8 @@ header {
 
         .circleLg {
             background-image: linear-gradient($blue, cyan);
+            height: 90px;
+            width: 90px;
             margin-right: 5%;
             display: flex;
             align-items: center;
@@ -441,11 +443,6 @@ header {
             border-radius: 50%;
             font-size: 2em;
             color: white;
-            // PARALLAX STYLING
-            opacity: 0;
-            height: 0;
-            width: 0;
-            transition: 0.8s ease-in-out; 
 
             &::after {
                 content: '';
@@ -460,7 +457,6 @@ header {
             opacity: 1;
             height: 90px;
             width: 90px;
-            // transform: translateY(0px);
         }
     }
 }
