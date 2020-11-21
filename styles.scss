@@ -264,11 +264,7 @@ header {
     }
 
     // parallax class
-    // .my-border-appear {
-    //     opacity: 1;
-    //     transform: translateY(0px);
-    // }
-    .animation {
+    .my-border-appear {
         opacity: 1;
         transform: translateY(0px);
     }
@@ -558,6 +554,12 @@ h2 {
     p {
         color: $lgrey;
         font-size: 20px;
+    }
+}
+
+.shift-reporter {
+    p {
+        font-size: 18px;
     }
 }
 
