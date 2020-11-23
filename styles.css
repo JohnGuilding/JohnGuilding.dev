@@ -478,20 +478,25 @@ h2 {
 .card-txt {
   text-align: center;
   height: 150px;
-  padding: 15px;
+  padding: 10px;
 }
 .card-txt h3 {
   text-decoration: underline;
-  font-size: 30px;
+  font-size: 25px;
+  color: white;
+}
+.card-txt h4 {
+  text-decoration: underline;
+  font-size: 20px;
   color: white;
 }
 .card-txt p {
   color: #EEEEEE;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .shift-reporter p {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .card-links {

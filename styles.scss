@@ -539,23 +539,29 @@ h2 {
 .card-txt {
     text-align: center;
     height: 150px;
-    padding: 15px;
+    padding: 10px;
 
     h3 {
         text-decoration: underline;
-        font-size: 30px;
+        font-size: 25px;
+        color: white;
+    }
+
+    h4 {
+        text-decoration: underline;
+        font-size: 20px;
         color: white;
     }
 
     p {
         color: $lgrey;
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 .shift-reporter {
     p {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
