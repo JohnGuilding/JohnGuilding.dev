@@ -26,6 +26,50 @@
   }
 }
 @media screen and (max-width: 1930px) and (max-width: 1600px) {
+  .about-section .my-border {
+    height: 650px;
+    width: 650px;
+  }
+  .about-section .my-border h2 {
+    font-size: 45px;
+  }
+  .about-section .my-border p {
+    font-size: 30px;
+  }
+
+  .tech-stack-section .tech {
+    width: 700px;
+    height: 500px;
+  }
+
+  .skills-container {
+    height: 600px;
+    width: 950px;
+  }
+  .skills-container h3 {
+    top: 2%;
+    margin-bottom: 30px;
+  }
+  .skills-container .skills {
+    height: 450px;
+  }
+  .skills-container .skills .circle-description {
+    width: 350px;
+    height: 70px;
+  }
+  .skills-container .skills .circle-description h4 {
+    font-size: 14px;
+  }
+  .skills-container .skills .circleLg {
+    height: 70px;
+    width: 70px;
+  }
+  .skills-container .skills .circleLg::after {
+    height: 70px;
+    width: 70px;
+    border: 10px solid;
+  }
+
   .projects-section {
     height: 1500px;
     width: 80%;
@@ -35,6 +79,14 @@
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+
+  .contact-container {
+    height: 350px;
+  }
+  .contact-container img {
+    height: 350px;
+    width: 350px;
   }
 }
 @media screen and (max-width: 1930px) and (max-width: 1400px) {
@@ -68,8 +120,8 @@
   }
 
   .skills-container {
-    height: 700px;
-    width: 900px;
+    height: 600px;
+    width: 950px;
   }
   .skills-container .skills .circle-description {
     width: 350px;

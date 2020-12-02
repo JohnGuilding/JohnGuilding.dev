@@ -6,11 +6,11 @@
     .middle-ground {
         width: 100%;
     }
-    
+
     .foreground {
         width: 100%;
     }
-    
+
     .background {
         width: 100%;
     }
@@ -21,16 +21,73 @@
     .middle-ground {
         width: 2000px;
     }
-    
+
     .foreground {
         width: 2000px;
     }
-    
+
     .background {
         width: 2000px;
     }
-
+//** MEDIA 1600PX **//
 @media screen and (max-width: 1600px){
+    .about-section {
+
+        .my-border {
+            height: 650px;
+            width: 650px;
+
+            h2 {
+                font-size: 45px;
+            }
+
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .tech-stack-section {
+
+        .tech {
+            width: 700px;
+            height: 500px;
+        }
+    }
+
+    .skills-container{
+        height: 600px;
+        width: 950px;
+
+        h3 {
+            top: 2%;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            height: 450px;
+
+            .circle-description {
+                width: 350px;
+                height: 70px;
+
+                h4 {
+                    font-size: 14px;
+                }
+            }
+
+            .circleLg {
+                height: 70px;
+                width: 70px;
+
+                &::after {
+                    height: 70px;
+                    width: 70px;
+                    border: 10px solid;
+                }
+            }
+        }
+    }
 
     .projects-section {
         height: 1500px;
@@ -42,6 +99,15 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+
+    .contact-container {
+        height: 350px;
+
+        img {
+            height: 350px;
+            width: 350px;
+        }
+    }
 }
 
 //** MEDIA 1400PX **//
@@ -49,21 +115,21 @@
     .middle-ground {
         width: 1400px;
     }
-    
+
     .foreground {
         width: 1400px;
     }
-    
+
     .background {
         width: 1400px;
     }
 
     .about-section {
-    
+
         .my-border {
             height: 550px;
             width: 550px;
-        
+
             .border-effect {
                 height: 105%;
             }
@@ -74,7 +140,7 @@
             h2 {
                 font-size: 40px;
             }
-        
+
             p {
                 font-size: 25px;
             }
@@ -82,11 +148,11 @@
     }
 
     .skills-container{
-        height: 700px;
-        width: 900px;
+        height: 600px;
+        width: 950px;
 
         .skills {
-    
+
             .circle-description {
                 width: 350px;
                 height: 80px;
@@ -99,7 +165,7 @@
             .circleLg {
                 height: 80px;
                 width: 80px;
-    
+
                 &::after {
                     height: 78px;
                     width: 78px;
@@ -136,11 +202,11 @@
     .middle-ground {
         width: 1300px;
     }
-    
+
     .foreground {
         width: 1300px;
     }
-    
+
     .background {
         width: 1300px;
     }
@@ -172,7 +238,7 @@
         transform: translateY(0px);
     }
 
-    .nav-toggle { 
+    .nav-toggle {
         display: inline-block;
     }
 
@@ -199,7 +265,7 @@
         }
 
         .skills {
-    
+
             .circle-description {
                 width: 290px;
                 height: 70px;
@@ -212,7 +278,7 @@
             .circleLg {
                 height: 70px;
                 width: 70px;
-    
+
                 &::after {
                     height: 70px;
                     width: 70px;
@@ -230,7 +296,7 @@
         height: 200px;
         width: 300px;
     }
-    
+
     .face1 {
         height: 200px;
         transform: translateY(100px);
@@ -283,10 +349,10 @@
     }
 
     .details-container {
-    
+
         h3 {
             font-size: 40px;
-        
+
             span {
                 font-size: 30px;
                 font-weight: 300;
@@ -325,17 +391,17 @@
     .middle-ground {
         width: 1300px;
     }
-    
+
     .foreground {
         width: 1300px;
     }
-    
+
     .background {
         width: 1300px;
     }
 
     .about-section {
-    
+
         .my-border {
             height: 500px;
             width: 450px;
@@ -347,12 +413,12 @@
             .border-effect2 {
                 height: 70%;
             }
-        
+
             h2 {
                 font-size: 30px;
                 top: 5%;
             }
-        
+
             p {
                 font-size: 23px;
             }
@@ -418,7 +484,7 @@
         justify-items: center;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
-    
+
         h3 {
             font-size: 40px;
             grid-column: 1 / 6;
@@ -430,11 +496,11 @@
             }
         }
 
-        
+
 
         .github {
             grid-column: 2;
-            grid-row: 2;       
+            grid-row: 2;
         }
 
         .linkedin {
@@ -442,12 +508,12 @@
             grid-row: 2;
         }
     }
-} 
+}
 
 //** MEDIA 500PX **//
 @media screen and (max-width: 500px){
     .about-section {
-    
+
         .my-border {
             height: 450px;
             width: 300px;
@@ -461,11 +527,11 @@
                 height: 86%;
                 width: 108%;
             }
-        
+
             h2 {
                 font-size: 30px;
             }
-        
+
             p {
                 font-size: 17px;
             }
@@ -524,7 +590,7 @@
                     height: 40px;
                     width: 40px;
                     font-size: 15px;
-        
+
                     &::after {
                         height: 38px;
                         width: 38px;
