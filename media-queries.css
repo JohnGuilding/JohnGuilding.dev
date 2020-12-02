@@ -258,13 +258,21 @@
 
   .card-txt {
     height: 100px;
-    padding: 15px;
+    padding: 5px;
   }
   .card-txt h3 {
-    font-size: 25px;
+    font-size: 18px;
+    color: yellow;
+  }
+  .card-txt h4 {
+    font-size: 15px;
   }
   .card-txt p {
-    font-size: 15px;
+    font-size: 13px;
+  }
+
+  .shift-reporter p {
+    font-size: 10px;
   }
 
   .card-links {

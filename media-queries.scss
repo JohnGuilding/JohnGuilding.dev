@@ -309,14 +309,25 @@
 
     .card-txt {
         height: 100px;
-        padding: 15px;
+        padding: 5px;
 
         h3 {
-            font-size: 25px;
+            font-size: 18px;
+            color: yellow;
+        }
+
+        h4 {
+            font-size: 15px;
         }
 
         p {
-            font-size: 15px;
+            font-size: 13px;
+        }
+    }
+    
+    .shift-reporter {
+        p {
+            font-size: 10px;
         }
     }
 
