@@ -523,6 +523,8 @@
 //** MEDIA 500PX **//
 @media screen and (max-width: 500px){
     .about-section {
+        height: 80vh;
+        display: inline-block;
 
         .my-border {
             height: 350px;
@@ -576,6 +578,7 @@
 
         .border-effect3 {
             width: 75%;
+            height: 105%;
         }
 
         .border-effect4 {

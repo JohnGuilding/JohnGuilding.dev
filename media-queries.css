@@ -430,6 +430,10 @@
   }
 }
 @media screen and (max-width: 1930px) and (max-width: 500px) {
+  .about-section {
+    height: 80vh;
+    display: inline-block;
+  }
   .about-section .my-border {
     height: 350px;
     width: 300px;
@@ -473,6 +477,7 @@
   }
   .skills-container .border-effect3 {
     width: 75%;
+    height: 105%;
   }
   .skills-container .border-effect4 {
     height: 86%;
