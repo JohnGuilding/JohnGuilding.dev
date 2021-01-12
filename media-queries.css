@@ -34,7 +34,7 @@
     font-size: 45px;
   }
   .about-section .my-border p {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .tech-stack-section .tech {
@@ -106,17 +106,17 @@
     height: 550px;
     width: 550px;
   }
-  .about-section .my-border .border-effect {
+  .about-section .my-border .border-effect1 {
     height: 105%;
   }
   .about-section .my-border .border-effect2 {
-    width: 105%;
+    width: 107%;
   }
   .about-section .my-border h2 {
     font-size: 40px;
   }
   .about-section .my-border p {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   .skills-container {
@@ -352,10 +352,10 @@
   }
   .about-section .my-border h2 {
     font-size: 30px;
-    top: 5%;
+    top: 10%;
   }
   .about-section .my-border p {
-    font-size: 23px;
+    font-size: 25px;
   }
 
   .tech-stack-section .tech {
@@ -431,22 +431,22 @@
 }
 @media screen and (max-width: 1930px) and (max-width: 500px) {
   .about-section .my-border {
-    height: 450px;
+    height: 350px;
     width: 300px;
   }
   .about-section .my-border .border-effect1 {
-    height: 105%;
-    width: 75%;
+    height: 107%;
+    width: 70%;
   }
   .about-section .my-border .border-effect2 {
-    height: 86%;
+    height: 75%;
     width: 108%;
   }
   .about-section .my-border h2 {
     font-size: 30px;
   }
   .about-section .my-border p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .tech-stack-section {
